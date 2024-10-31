@@ -1,0 +1,14 @@
+:root{
+    --pdfev-primary:#c79f62;
+    --pdfev-secondary:#666;
+    --pdfev-light:#e5e5e5;
+    --pdfev-dark:#333;
+    --pdfev-black:#000;
+    --pdfev-white:#fff;
+}
+@import '../font-awesome/fontawesome.scss';
+@import 'basic';
+@import 'list';
+@import 'grid';
+@import 'ebook';
+@import 'newsletter';

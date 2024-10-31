@@ -1,0 +1,96 @@
+.pdfev-embed-viewer{
+    max-width:1240px;
+    margin: 0 auto;
+    width: 100%;
+
+    a{
+        text-decoration: none;
+        color: var(--pdfev-primary);
+        font-weight: bold;
+        &:hover{
+            color: var(--pdfev-secondary);
+            text-decoration: underline;
+        }
+    }
+    h1{
+        color:var(--pdfev-dark); ;
+    }
+    .button{
+        background: var(--pdfev-primary);
+        padding: 0.1em 0.5em;
+        border-radius: .25em;
+        color: var(--pdfev-white);
+        font-weight: normal;
+    }
+    .download-btn{
+        @extend .button;
+        display: inline-flex;
+        align-items: center;
+        gap: .5em;
+        color: var(--pdfev-white);
+        text-decoration: none;
+        &:hover{
+            color: var(--pdfev-primary);
+            background-color: var(--pdfev-secondary);
+            text-decoration: none;
+        }
+    }
+    .read-btn{
+        @extend .download-btn;
+    }
+    .pdf-viewer{
+        margin: .5em 0;
+        width: 100%;
+        height: 1024px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pagination {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        
+        .page-numbers{
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid var(--pdfev-secondary);
+            &.current{
+                background-color: var(--pdfev-primary);
+                color: var(--pdfev-emd-vwr-white);
+            }
+        }
+    }
+    
+}
+
+.pdfev-embed-viewer-shortcode{
+    max-width: auto;
+    margin: 0 auto;
+    width: 100%;
+    .download-btn{
+        @extend .button;
+        display: inline-flex;
+        align-items: center;
+        gap: .5em;
+        color: var(--pdfev-white);
+        text-decoration: none;
+        &:hover{
+            color: var(--pdfev-primary);
+            background-color: var(--pdfev-secondary);
+            text-decoration: none;
+        }
+    }
+    .pdf-viewer{
+        margin: .5em 0;
+        width: 100%;
+        height: 1024px;
+    }
+}
+
+/*==================footer pagination================*/
+
+
